@@ -1,0 +1,16 @@
+name: ScoreboardPlus
+version: 1.0
+author: RayTraces
+main: executed.scoreboard.Main
+description: Lightweight Scoreboard plugin with PlaceholderAPI Support!
+website: https://taq5.online
+
+
+commands:
+  spreload:
+    description: Reload the scoreboard config.yml
+    usage: /spreload
+    permission: scoreboard.reload
+    permission-message: You don't have permission to use this command!
+
+depend: [PlaceholderAPI]

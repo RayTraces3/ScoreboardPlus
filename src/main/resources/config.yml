@@ -1,0 +1,10 @@
+#config.yml for Scoreboard+
+#Color Codes --> https://www.digminecraft.com/lists/color_list_pc.php
+#It can go over 3 lines by the way, just use the same format as the other lines
+scoreboard:
+ title: "&3&lYourServer" #Top text of the Scoreboard.
+ lines: #These are all the lines.
+  - "Online: %server_online%" #Line 1
+  - "Line 2 (Edit this in config.yml)" #Line 2
+  - "line 3 (Edit this in config.yml)" #Line 3
+  - "&7yourserver.com (Edit this in config.yml" #Line 4
