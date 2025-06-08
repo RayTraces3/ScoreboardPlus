@@ -1,5 +1,5 @@
 name: ScoreboardPlus
-version: 1.0
+version: 1.0.1
 author: RayTraces
 main: me.executed.scoreboardplus.ScoreboardPlus
 description: Lightweight Scoreboard plugin with PlaceholderAPI Support!
