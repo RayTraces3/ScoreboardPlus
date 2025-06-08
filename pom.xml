@@ -47,6 +47,14 @@
                             <!-- Replace 'com.yourpackage' with the package of your plugin ! -->
                             <shadedPattern>executed.scoreboard</shadedPattern>
                         </relocation>
+                        <relocation>
+                            <pattern>co.aikar.commands</pattern>
+                            <shadedPattern>executed.scoreboard.acf</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>co.aikar.locales</pattern>
+                            <shadedPattern>executed.scoreboard.locales</shadedPattern>
+                        </relocation>
                     </relocations>
                 </configuration>
             </plugin>
@@ -72,6 +80,10 @@
             <id>placeholderapi</id>
             <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
+        <repository>
+            <id>aikar</id>
+            <url>https://repo.aikar.co/content/groups/aikar/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -91,6 +103,17 @@
             <groupId>fr.mrmicky</groupId>
             <artifactId>fastboard</artifactId>
             <version>2.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>co.aikar</groupId>
+            <artifactId>acf-paper</artifactId>
+            <version>0.5.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

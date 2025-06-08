@@ -1,22 +1,29 @@
 package executed.scoreboard.commands;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
+import co.aikar.commands.BaseCommand;
+import co.aikar.commands.CommandHelp;
+import co.aikar.commands.annotation.CommandAlias;
+import co.aikar.commands.annotation.CommandPermission;
+import co.aikar.commands.annotation.HelpCommand;
+import co.aikar.commands.annotation.Subcommand;
+import executed.scoreboard.ScoreboardPlus;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.java.JavaPlugin;
 
-public class ReloadCommand implements CommandExecutor {
-    private final JavaPlugin plugin;
+@CommandAlias("sp|scoreboardplus")
+public class ReloadCommand extends BaseCommand {
 
-    public ReloadCommand(JavaPlugin plugin) {
-        this.plugin = plugin;
+    @HelpCommand
+    public void help(CommandSender sender, CommandHelp help) {
+        help.showHelp();
     }
 
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        plugin.getServer().getPluginManager().disablePlugin(plugin);
-        plugin.getServer().getPluginManager().enablePlugin(plugin);
-        sender.sendMessage("Config reloaded");
-        return true;
+    @CommandPermission("scoreboardplus.command.reload")
+    @Subcommand("reload")
+    public void reload(CommandSender sender) {
+        ScoreboardPlus.getInstance().reloadConfig();
+
+        sender.sendMessage(ChatColor.translateAlternateColorCodes('&',"&6&lSCOREBOARD+ &8| &fConfig.yml Reloaded"));
     }
+
 }
