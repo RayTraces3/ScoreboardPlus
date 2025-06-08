@@ -1,8 +1,8 @@
-package executed.scoreboard.listeners;
+package me.executed.scoreboardplus.listeners;
 
-import executed.scoreboard.ScoreboardPlus;
-import executed.scoreboard.utils.Scoreboard;
 import fr.mrmicky.fastboard.adventure.FastBoard;
+import me.executed.scoreboardplus.ScoreboardPlus;
+import me.executed.scoreboardplus.utils.Scoreboard;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

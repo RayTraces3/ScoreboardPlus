@@ -1,9 +1,9 @@
-package executed.scoreboard.utils;
+package me.executed.scoreboardplus.utils;
 
-import executed.scoreboard.ScoreboardPlus;
 import fr.mrmicky.fastboard.adventure.FastBoard;
 import lombok.Getter;
 import me.clip.placeholderapi.PlaceholderAPI;
+import me.executed.scoreboardplus.ScoreboardPlus;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.entity.Player;

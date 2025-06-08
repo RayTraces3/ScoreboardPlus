@@ -1,11 +1,11 @@
-package executed.scoreboard;
+package me.executed.scoreboardplus;
 
 import co.aikar.commands.PaperCommandManager;
-import executed.scoreboard.commands.ReloadCommand;
-import executed.scoreboard.listeners.JoinLeaveListener;
-import executed.scoreboard.utils.Scoreboard;
 import fr.mrmicky.fastboard.adventure.FastBoard;
 import lombok.Getter;
+import me.executed.scoreboardplus.commands.ReloadCommand;
+import me.executed.scoreboardplus.listeners.JoinLeaveListener;
+import me.executed.scoreboardplus.utils.Scoreboard;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

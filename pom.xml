@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>executed</groupId>
-    <artifactId>Scoreboard</artifactId>
+    <groupId>me.exeuted</groupId>
+    <artifactId>ScoreboardPlus</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Scoreboard</name>
+    <name>ScoreboardPlus</name>
 
     <properties>
         <java.version>21</java.version>
@@ -45,15 +45,15 @@
                         <relocation>
                             <pattern>fr.mrmicky.fastboard</pattern>
                             <!-- Replace 'com.yourpackage' with the package of your plugin ! -->
-                            <shadedPattern>executed.scoreboard</shadedPattern>
+                            <shadedPattern>me.executed.scoreboardplus</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>co.aikar.commands</pattern>
-                            <shadedPattern>executed.scoreboard.acf</shadedPattern>
+                            <shadedPattern>me.executed.scoreboardplus</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>co.aikar.locales</pattern>
-                            <shadedPattern>executed.scoreboard.locales</shadedPattern>
+                            <shadedPattern>me.executed.scoreboardplus</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

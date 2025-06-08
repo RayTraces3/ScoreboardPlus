@@ -1,7 +1,7 @@
 name: ScoreboardPlus
 version: 1.0
 author: RayTraces
-main: executed.scoreboard.ScoreboardPlus
+main: me.executed.scoreboardplus.ScoreboardPlus
 description: Lightweight Scoreboard plugin with PlaceholderAPI Support!
 website: https://taq5.online
 depend: [PlaceholderAPI]

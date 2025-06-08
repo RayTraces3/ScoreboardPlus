@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>executed</groupId>
-  <artifactId>Scoreboard</artifactId>
-  <name>Scoreboard</name>
+  <groupId>me.exeuted</groupId>
+  <artifactId>ScoreboardPlus</artifactId>
+  <name>ScoreboardPlus</name>
   <version>1.0</version>
   <build>
     <defaultGoal>clean package</defaultGoal>
@@ -37,15 +37,15 @@
           <relocations>
             <relocation>
               <pattern>fr.mrmicky.fastboard</pattern>
-              <shadedPattern>executed.scoreboard</shadedPattern>
+              <shadedPattern>me.executed.scoreboardplus</shadedPattern>
             </relocation>
             <relocation>
               <pattern>co.aikar.commands</pattern>
-              <shadedPattern>executed.scoreboard.acf</shadedPattern>
+              <shadedPattern>me.executed.scoreboardplus</shadedPattern>
             </relocation>
             <relocation>
               <pattern>co.aikar.locales</pattern>
-              <shadedPattern>executed.scoreboard.locales</shadedPattern>
+              <shadedPattern>me.executed.scoreboardplus</shadedPattern>
             </relocation>
           </relocations>
         </configuration>

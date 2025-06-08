@@ -1,4 +1,4 @@
-package executed.scoreboard.commands;
+package me.executed.scoreboardplus.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.CommandHelp;
@@ -6,7 +6,7 @@ import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.HelpCommand;
 import co.aikar.commands.annotation.Subcommand;
-import executed.scoreboard.ScoreboardPlus;
+import me.executed.scoreboardplus.ScoreboardPlus;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
