@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>executed</groupId>
-    <artifactId>Scoreboard</artifactId>
+    <groupId>me.exeuted</groupId>
+    <artifactId>ScoreboardPlus</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Scoreboard</name>
+    <name>ScoreboardPlus</name>
 
     <properties>
         <java.version>21</java.version>
@@ -17,6 +17,7 @@
     </properties>
 
     <build>
+        <finalName>ScoreboardPlus</finalName>
         <defaultGoal>clean package</defaultGoal>
         <plugins>
             <plugin>
@@ -45,7 +46,15 @@
                         <relocation>
                             <pattern>fr.mrmicky.fastboard</pattern>
                             <!-- Replace 'com.yourpackage' with the package of your plugin ! -->
-                            <shadedPattern>executed.scoreboard</shadedPattern>
+                            <shadedPattern>me.executed.scoreboardplus</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>co.aikar.commands</pattern>
+                            <shadedPattern>me.executed.scoreboardplus</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>co.aikar.locales</pattern>
+                            <shadedPattern>me.executed.scoreboardplus</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
@@ -72,6 +81,10 @@
             <id>placeholderapi</id>
             <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
+        <repository>
+            <id>aikar</id>
+            <url>https://repo.aikar.co/content/groups/aikar/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -91,6 +104,17 @@
             <groupId>fr.mrmicky</groupId>
             <artifactId>fastboard</artifactId>
             <version>2.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>co.aikar</groupId>
+            <artifactId>acf-paper</artifactId>
+            <version>0.5.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
