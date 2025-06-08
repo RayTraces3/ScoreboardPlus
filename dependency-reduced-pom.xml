@@ -39,6 +39,14 @@
               <pattern>fr.mrmicky.fastboard</pattern>
               <shadedPattern>executed.scoreboard</shadedPattern>
             </relocation>
+            <relocation>
+              <pattern>co.aikar.commands</pattern>
+              <shadedPattern>executed.scoreboard.acf</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>co.aikar.locales</pattern>
+              <shadedPattern>executed.scoreboard.locales</shadedPattern>
+            </relocation>
           </relocations>
         </configuration>
       </plugin>
@@ -57,6 +65,10 @@
       <id>placeholderapi</id>
       <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
     </repository>
+    <repository>
+      <id>aikar</id>
+      <url>https://repo.aikar.co/content/groups/aikar/</url>
+    </repository>
   </repositories>
   <dependencies>
     <dependency>
@@ -71,9 +83,15 @@
       <version>1.21.5-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.38</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>21</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
